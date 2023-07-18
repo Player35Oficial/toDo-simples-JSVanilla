@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121214;
+  color: #e1e1e6;
+}
+
+.main {
+  background-color: #202024;
+  height: min-content;
+  width: 50rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 16px;
+}
+
+.main button {
+  cursor: pointer;
+  border-style: none;
+}
+
+.main form label.taskInput-container {
+  margin: 1.875rem 0;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.main form label.taskInput-container input {
+  width: 100%;
+  border-style: none;
+  border-radius: 0.2rem;
+  padding-left: 0.8rem;
+  outline-style: none;
+}
+
+.main form label.taskInput-container button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border-style: none;
+  transition: all 0.1s;
+}
+
+.main form label.taskInput-container button:hover {
+  background-color: #00b37e;
+}
+
+.main section.tasks-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main section.tasks-container .tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  list-style: none;
+}
+
+.main section.tasks-container .tasks .task {
+  background-color: #29292e;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+.main section.tasks-container .tasks .task p {
+  outline-style: none;
+  padding: 0.5rem 0.5rem;
+}
+
+/* .main section.tasks-container .tasks .task p {
+  width: 100%;
+  display: block;
+} */
+
+.main section.tasks-container .tasks .task.complete {
+  text-decoration: line-through;
+  color: #7c7c8a;
+}
+
+.main section.tasks-container .tasks .task .actions {
+  display: flex;
+  gap: 1.125rem;
+}
+
+.main section.tasks-container .tasks .task .actions button {
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: all 0.1s;
+}
+
+.main
+  section.tasks-container
+  .tasks
+  .task
+  .actions
+  button
+  .complete-task-btn:hover {
+  background-color: #04d361;
+}
+
+.main
+  section.tasks-container
+  .tasks
+  .task
+  .actions
+  button.delete-task-btn:hover {
+  background: #d73628;
+}
+.main section.tasks-container .tasks .task .actions button.edit-task-btn:hover {
+  background: #6a80ff;
+}
+
+.main section.tasks-container .tasks .task .actions img {
+  width: 80%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Lista de Tarefas</h1>
+      <form id="taskForm">
+        <label for="taskInput" class="taskInput-container">
+          <input type="text" name="taskInput" id="taskInput" />
+          <button type="submit">
+            <img src="./assets/plus-solid.svg" alt="add task" />
+          </button>
+        </label>
+      </form>
+      <section class="tasks-container">
+        <ul class="tasks" id="tasks">
+          <li class="task">
+            <p contenteditable="true" class="content">Tomar Café</p>
+            <div class="actions">
+              <button class="edit-task-btn">
+                <img src="./assets/pen-solid.svg" alt="edit task" />
+              </button>
+              <button class="complete-task-btn">
+                <img src="./assets/check-solid.svg" alt="check task" />
+              </button>
+              <button class="delete-task-btn">
+                <img src="./assets/xmark-solid.svg" alt="delete task" />
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
